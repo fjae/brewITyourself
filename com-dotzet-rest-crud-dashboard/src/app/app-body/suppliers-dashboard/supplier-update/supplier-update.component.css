@@ -1,0 +1,19 @@
+.main-button {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.mat-card-button {
+    max-width: 0.5em;
+    max-height: 0.5em;
+    width: 0.5em;
+    height: 0.5em;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.dashboard-local-button-vertical-space {
+    min-height: 0.25em;
+    height: 0.25em;
+}
