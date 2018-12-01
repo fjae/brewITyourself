@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -20,12 +20,14 @@ import { SupplierCreateComponent } from './app-body/suppliers-dashboard/supplier
 import { SupplierUpdateComponent } from './app-body/suppliers-dashboard/supplier-update/supplier-update.component';
 import { SupplierDeleteComponent } from './app-body/suppliers-dashboard/supplier-delete/supplier-delete.component';
 import { SupplierReadComponent } from './app-body/suppliers-dashboard/supplier-read/supplier-read.component';
+// tslint:disable-next-line:max-line-length
 import { SuppliersDashboardHeaderComponent } from './app-body/suppliers-dashboard/suppliers-dashboard-header/suppliers-dashboard-header.component';
 import { SupplierCreateFormComponent } from './app-body/suppliers-dashboard/supplier-create-form/supplier-create-form.component';
 import { SupplierDeleteFormComponent } from './app-body/suppliers-dashboard/supplier-delete-form/supplier-delete-form.component';
 import { SupplierReadFormComponent } from './app-body/suppliers-dashboard/supplier-read-form/supplier-read-form.component';
 import { SupplierUpdateFormComponent } from './app-body/suppliers-dashboard/supplier-update-form/supplier-update-form.component';
 import { SuppliersTableComponent } from './app-body/suppliers-dashboard/suppliers-table/suppliers-table.component';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { SuppliersTableComponent } from './app-body/suppliers-dashboard/supplier
     AppRoutingModule,
     FlexLayoutModule,
     MatCardModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

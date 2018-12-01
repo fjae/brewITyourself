@@ -1,14 +1,14 @@
 .main-dashboard-button {
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 .mat-card-supplier {
-    max-width: 3em;
-    max-height: 3em;
-    width: 3em;
-    height: 3em;
-    border: 3px solid black;
+    max-width: 1em;
+    max-height: 1em;
+    width: 1em;
+    height: 1em;
+    border: 2px solid black;
     border-radius: 8px;
     background-color: black;
 }
@@ -23,11 +23,13 @@
 .mat-card-content-suppliers {
     color: black;
     text-align: center;
-    font-size: 8pt;
+    font-size: 6pt;
     font-weight: 1000;
 }
 
 .main-dashboard-button-vertical-space {
-    min-height: 1.5em;
-    height: 1.5em;
+    min-height: 1em;
+    height: 1em;
+    min-width: 1em;
+    width: 1em;
 }

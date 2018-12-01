@@ -2,6 +2,7 @@ package com.dotzet.rest.jersey.crud.suppliers;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+
 @XmlRootElement
 public class Supplier {
     private String vat;
@@ -14,10 +15,9 @@ public class Supplier {
     private String phone;
     private String fax;
     private String homePage;
+    
+/**    public Supplier() {}
 
-/*    public Supplier(){
-
-    }
     public Supplier (String vat, String companyName, String address, String city, String region, String postalCode, String country, String phone, String fax, String homePage){
         this.vat = vat;
         this.companyName = companyName;
@@ -30,7 +30,7 @@ public class Supplier {
         this.fax = fax;
         this.homePage = homePage;
     }
-*/
+**/
     public String getVat() {
         return vat;
     }

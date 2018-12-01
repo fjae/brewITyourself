@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ServiceRestService } from './service-rest.service';
+import { RestConsumerService } from './rest-consumer.service';
 
-describe('ServiceRestService', () => {
+describe('RestConsumerService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: ServiceRestService = TestBed.get(ServiceRestService);
+    const service: RestConsumerService = TestBed.get(RestConsumerService);
     expect(service).toBeTruthy();
   });
 });
