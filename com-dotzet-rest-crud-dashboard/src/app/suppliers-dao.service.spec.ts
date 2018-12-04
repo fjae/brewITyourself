@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RestConsumerService } from './rest-consumer.service';
+import { SuppliersDaoService } from './suppliers-dao.service';
 
-describe('RestConsumerService', () => {
+describe('SuppliersDaoService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: RestConsumerService = TestBed.get(RestConsumerService);
+    const service: SuppliersDaoService = TestBed.get(SuppliersDaoService);
     expect(service).toBeTruthy();
   });
 });

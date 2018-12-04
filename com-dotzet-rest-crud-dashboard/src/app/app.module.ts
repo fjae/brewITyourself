@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
-import { Routes } from '@angular/router';
 import { ApplicationHeaderComponent } from './application-header/application-header.component';
 import { CompanyNameComponent } from './application-header/company-name/company-name.component';
 import { CompanyLogoComponent } from './application-header/company-logo/company-logo.component';
@@ -27,6 +26,7 @@ import { SupplierDeleteFormComponent } from './app-body/suppliers-dashboard/supp
 import { SupplierReadFormComponent } from './app-body/suppliers-dashboard/supplier-read-form/supplier-read-form.component';
 import { SupplierUpdateFormComponent } from './app-body/suppliers-dashboard/supplier-update-form/supplier-update-form.component';
 import { SuppliersTableComponent } from './app-body/suppliers-dashboard/suppliers-table/suppliers-table.component';
+import { MatTableModule } from '@angular/material';
 
 
 @NgModule({
@@ -57,7 +57,8 @@ import { SuppliersTableComponent } from './app-body/suppliers-dashboard/supplier
     FlexLayoutModule,
     MatCardModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

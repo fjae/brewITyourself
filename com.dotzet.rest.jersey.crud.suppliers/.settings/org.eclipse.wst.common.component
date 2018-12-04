@@ -4,6 +4,5 @@
 		<property name="context-root" value="com.dotzet.rest.jersey.crud.suppliers"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
 		<wb-resource deploy-path="/" source-path="WebContent"/>
-		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
 	</wb-module>
 </project-modules>
