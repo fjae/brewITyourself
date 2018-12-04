@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Supplier, Suppliers, SuppliersDaoService } from '../../../suppliers-dao.service';
-import { MatTabsModule, MatTable, MatTableDataSource } from '@angular/material';
+import { SuppliersDaoService } from '../../../suppliers-dao.service';
+import { MatTableDataSource } from '@angular/material';
 
 
 
@@ -12,12 +12,13 @@ import { MatTabsModule, MatTable, MatTableDataSource } from '@angular/material';
   styleUrls: ['./suppliers-table.component.css']
 })
 export class SuppliersTableComponent implements AfterViewInit {
+  displayedColumns: string[] = ['vat', 'companyName', 'address', 'city', 'region', 'postalCode', 'country', 'phone', 'fax', 'homePage'];
 
-  displayedColumns = ['VAT', 'Company name', 'Address', 'City', 'Region', 'Postal Code', 'Country', 'Phone number', 'Fax', 'Home page'];
   suppliersDao: SuppliersDaoService | null;
   suppliersJSONstring: string;
-  suppliersJSON: JSON;
-  datasource: MatTableDataSource<Supplier> = new MatTableDataSource();
+  suppliersJSON: JSON[];
+  datasource: MatTableDataSource<JSON> = new MatTableDataSource(this.suppliersJSON);
+
   constructor(private http: HttpClient) { }
 
   ngAfterViewInit() {
@@ -26,6 +27,7 @@ export class SuppliersTableComponent implements AfterViewInit {
       console.log(data);
       this.suppliersJSONstring = JSON.stringify(data);
       this.suppliersJSON = JSON.parse(this.suppliersJSONstring);
+      this.datasource = new MatTableDataSource(this.suppliersJSON);
       console.log('suppliers JSON string not iterative: ' + this.suppliersJSONstring);
       console.log('suppliers JSON same as any: ' + this.suppliersJSON);
     });
